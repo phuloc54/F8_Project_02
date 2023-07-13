@@ -11,14 +11,24 @@
 
         <!-- Font -->
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
     </head>
-    <body style="height: 5000px;">
+    <body style="height: 5000px">
         <!-- Header -->
         <header class="header">
             <div class="content">
                 <navbar class="navbar">
                     <!-- Logo -->
-                    <img src="./assets/img/logo.svg" alt="Lesson logo" class="logo">
+                    <img
+                        src="./assets/img/logo.svg"
+                        alt="Lesson logo"
+                        class="logo"
+                    />
                     <!-- Menu -->
                     <ul class="list">
                         <li class="item"><a href="#!">Home</a></li>
@@ -33,5 +43,98 @@
                 </navbar>
             </div>
         </header>
+        <main>
+            <!-- Hero -->
+            <div class="hero">
+                <div class="content">
+                    <!-- Image and Courses -->
+                    <div class="img-courses">
+                        <img src="./assets/img/hero-img.png" alt="" class="image" />
+
+                        <div class="courses">
+                            <!-- UI UX Course -->
+                            <div class="item">
+                                <div class="circle">
+                                    <img
+                                        src="./assets/img/hero_icon_1.svg"
+                                        alt="page icon"
+                                        class="icon"
+                                    />
+                                </div>
+                                <div class="info-course">
+                                    <p class="quantity">20 Courses</p>
+                                    <strong class="name">UI/UX Design</strong>
+                                </div>
+                            </div>
+
+                            <!-- Dev Course -->
+                            <div class="item">
+                                <div class="circle">
+                                    <img
+                                        src="./assets/img/hero_icon_2.svg"
+                                        alt="development icon"
+                                        class="icon"
+                                    />
+                                </div>
+                                <div class="info-course">
+                                    <p class="quantity">20 Courses</p>
+                                    <strong class="name">Development</strong>
+                                </div>
+                            </div>
+
+                            <!-- Marketing Course -->
+                            <div class="item">
+                                <div class="circle">
+                                    <img
+                                        src="./assets/img/hero_icon_3.svg"
+                                        alt="Marketing icon"
+                                        class="icon"
+                                    />
+                                </div>
+                                <div class="info-course">
+                                    <p class="quantity">30 Courses</p>
+                                    <strong class="name">Marketing</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="info">
+                        <h1 class="title">
+                            Learn without limits and spread knowledge.
+                        </h1>
+                        <p class="desc">
+                            Build new skills for that “this is my year” feeling with
+                            courses, certificates, and degrees from world-class
+                            universities and companies.
+                        </p>
+
+                        <!-- Button Hero -->
+                        <div class="cta-group">
+                            <a href="#!" class="btn hero-cta">See Courses</a>
+                            <!-- Watch videos -->
+                            <button class="watch-video">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/img/play-video-icon.svg"
+                                        alt="play video icon"
+                                    />
+                                </div>
+                                <span>Watch Video</span>
+                            </button>
+                        </div>
+                        <!-- More Info -->
+                        <p class="desc desc-bottom">Recent engagement</p>
+                        <p class="desc stats">
+                            <strong>50K</strong>
+                            Students
+                            <strong>70+</strong>
+                            Courses
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
