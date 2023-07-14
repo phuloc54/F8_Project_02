@@ -407,3 +407,83 @@ a {
 .popular .row-top .star {
     margin-right: 6px;
 }
+
+/* ===========Feeback ================= */
+
+.feedback {
+    background-color: #2e2100;
+}
+
+.feedback .body {
+    position: relative;
+    display: flex;
+    padding: 96px 0;
+}
+
+.feedback .avt img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feedback .info-student .name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.feedback .info-student .sub-info {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+    white-space: nowrap;
+}
+
+.feedback .comment {
+    padding-top: 28px;
+    /* khi dung margin de tang khoang cach */
+    width: 770px; /*ta phai dat dung width cua phan tu*/
+    margin-left: 271px;
+}
+
+.feedback .comment .icon {
+    position: absolute;
+    top: 96px;
+    left: 400px;
+}
+
+.feedback .comment .desc {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+}
+
+.feedback .slide-icon {
+    position: absolute;
+    left: 0;
+    bottom: 96px;
+
+    display: flex;
+    gap: 4px;
+
+    width: 30px;
+    height: 6px;
+}
+
+.feedback .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+}
+
+.feedback .slide-icon .circle:nth-child(2) {
+    background-color: var(--secondary-color);
+}
