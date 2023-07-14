@@ -83,7 +83,7 @@ a {
 
 .navbar .item.active a,
 .navbar .item a:hover {
-    color: #171100;
+    color: var(--primary-color);
     text-shadow: 1px 0 0 currentColor;
 }
 
@@ -100,7 +100,7 @@ a {
     width: 12px;
     height: 2px;
     border-radius: 1px;
-    background: #171100;
+    background: var(--primary-color);
 }
 
 .header .action {
@@ -144,7 +144,6 @@ a {
     width: 270px;
     background-color: #fff;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
-
 }
 
 .hero .courses .item {
@@ -184,7 +183,7 @@ a {
 }
 
 .hero .courses .name {
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66;
@@ -201,7 +200,7 @@ a {
 }
 
 .hero .info .title {
-    color: #171100;
+    color: var(--primary-color);
     font-family: var(--font-heading);
     font-size: 5.8rem;
     font-weight: 700;
@@ -223,7 +222,7 @@ a {
 
     padding: 24px 16px;
     border-radius: 32px;
-    background-color: #ffb900;
+    background-color: var(--secondary-color);
 }
 
 .hero .cta-group {
@@ -254,7 +253,7 @@ a {
 }
 
 .hero .watch-video span {
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -269,7 +268,7 @@ a {
 
 .hero .stats strong {
     padding: 0px 8px 0 28px;
-    color: #171100;
+    color: var(--primary-color);
     font-family: var(--font-heading);
     font-size: 4.4rem;
     font-weight: 700;
@@ -278,4 +277,119 @@ a {
 
 .hero .stats strong:first-child {
     margin-left: -28px;
+}
+
+/* =============Popular============ */
+
+.popular {
+    margin-top: 200px;
+}
+
+.popular .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .info {
+    width: 458px;
+}
+
+.popular .sub-heading {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+}
+
+.popular .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
+.popular .group-button {
+    display: flex;
+    gap: 18px;
+}
+
+.popular .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.popular .button-left {
+    background-color: white;
+    border: solid 1px var(--secondary-color);
+}
+
+.popular .button-right {
+    background-color: var(--secondary-color);
+}
+
+.popular .list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.popular .item {
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.popular .item .body {
+    padding: 16px 22px 22px;
+    padding: 16px 22px 22px;
+}
+
+.popular .thumb {
+    width: 100%;
+    height: 278px;
+
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+}
+
+.popular .name-courses {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.popular .desc-item {
+    margin-top: 6px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.popular .row-end {
+    margin-top: 12px;
+}
+
+.popular .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.popular-cta {
+    min-width: 118px;
+    font-size: 1.4rem;
+}
+
+.popular-cta:hover {
+    background-color: var(--secondary-color);
 }
