@@ -363,7 +363,7 @@ a {
 }
 
 .popular .name-courses {
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -381,7 +381,7 @@ a {
 }
 
 .popular .price {
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -447,7 +447,7 @@ a {
 .feedback .comment {
     padding-top: 28px;
     /* khi dung margin de tang khoang cach */
-    width: 770px; /*ta phai dat dung width cua phan tu*/
+    width: 66%; /*ta phai dat dung width cua phan tu*/
     margin-left: 271px;
 }
 
@@ -486,4 +486,89 @@ a {
 
 .feedback .slide-icon .circle:nth-child(2) {
     background-color: var(--secondary-color);
+}
+
+/* =================Features=============== */
+.features {
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.features .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .group-img {
+    position: relative;
+
+    display: flex;
+    gap: 30px;
+    width: 49%;
+    height: 438px;
+}
+
+.features .group-img img {
+    position: absolute;
+    bottom: 0;
+    width: 270px;
+    height: 405px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features .group-img img:last-child {
+    top: 0;
+    right: 0;
+}
+
+.features .info {
+    margin-top: 58px;
+    width: 470px;
+    max-width: 100%;
+}
+
+.features .info .sub-heading {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.02em;
+}
+
+.features .info .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.features .features-cta {
+    margin-top: 32px;
+    min-width: 137px;
+    background-color: var(--secondary-color);
+}
+
+/* Feature 2 - Row Bottom */
+.features .row-bottom {
+    margin-top: 200px;
+}
+.features .row-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.features .info-row-bottom {
+    margin-top: 0;
+    width: 570px;
+    max-width: 100%;
+}
+
+.features .img-row-bottom {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
 }
