@@ -47,6 +47,40 @@ a {
     opacity: 0.8;
 }
 
+.heading {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17; /* 117.241% */
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
+.heading.lv3 {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* ==========Header============ */
 .header {
     padding-top: 24px;
@@ -143,7 +177,7 @@ a {
 
     width: 270px;
     background-color: #fff;
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero .courses .item {
@@ -199,21 +233,13 @@ a {
     padding-left: 130px;
 }
 
-.hero .info .title {
-    color: var(--primary-color);
-    font-family: var(--font-heading);
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17; /* 117.241% */
-    letter-spacing: -0.02em;
-}
-
 .hero .info .desc {
     margin-top: 22px;
     color: #5f5b53;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
+    word-break: break-all;
 }
 
 .hero .hero-cta {
@@ -295,15 +321,6 @@ a {
     width: 458px;
 }
 
-.popular .sub-heading {
-    color: var(--primary-color);
-    font-family: var(--font-heading);
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26;
-    letter-spacing: -0.02em;
-}
-
 .popular .desc {
     margin-top: 16px;
     color: #5f5b53;
@@ -318,9 +335,14 @@ a {
 }
 
 .popular .button {
+    color: var(--secondary-color);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: white;
+    border: solid 1px var(--secondary-color);
 
     width: 40px;
     height: 40px;
@@ -329,14 +351,9 @@ a {
     cursor: pointer;
 }
 
-.popular .button-left {
-    background-color: white;
-    border: solid 1px var(--secondary-color);
-}
-
-.popular .button-right {
+.popular .button:hover {
+    color: #fff;
     background-color: var(--secondary-color);
-    border: transparent;
 }
 
 .popular .list {
@@ -346,9 +363,10 @@ a {
 }
 
 .popular .item {
+    flex: 1;
     border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2dfda;
 }
 
 .popular .item .body {
@@ -356,11 +374,22 @@ a {
 }
 
 .popular .thumb {
-    width: 100%;
+    margin: -1px;
+
+    width: calc(100% + 2px);
     height: 278px;
 
     border-radius: 12px 12px 0px 0px;
     object-fit: cover;
+}
+
+.popular .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popular .heading.lv3 a {
+    color: var(--primary-color);
 }
 
 .popular .name-courses {
@@ -390,6 +419,7 @@ a {
 .popular-cta {
     min-width: 118px;
     font-size: 1.4rem;
+    border: none;
 }
 
 .popular-cta:hover {
@@ -530,15 +560,6 @@ a {
     width: 470px;
 }
 
-.features .info .sub-heading {
-    color: var(--primary-color);
-    font-family: var(--font-heading);
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26; /* 126.316% */
-    letter-spacing: -0.02em;
-}
-
 .features .info .desc {
     margin-top: 16px;
     color: #5f5b53;
@@ -584,14 +605,8 @@ a {
     background-color: #fffcf4;
 }
 
-.blog .sub-heading {
-    color: #130606;
+.blog .heading.lv2 {
     text-align: center;
-    font-family: var(--font-heading);
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26; /* 126.316% */
-    letter-spacing: -0.02em;
 }
 
 .blog .desc {
@@ -613,13 +628,20 @@ a {
 }
 
 .blog .item {
+    flex: 1;
     border-radius: 16px;
     background: #fff;
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2dfda;
+}
+
+.blog .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
 }
 
 .blog .thumb {
-    width: 100%;
+    margin: -1px;
+    width: calc(100% + 2px);
     height: 250px;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
@@ -651,19 +673,16 @@ a {
     border-radius: 50%;
 }
 
+.blog .item .heading a {
+    color: #171100;
+}
+
 .blog .separate {
     margin: 12px 0;
     width: 160px;
     height: 1px;
     border-radius: 0.5px;
     background: #e2dfda;
-}
-
-.blog .sub-heading-item a {
-    color: #171100;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.75; /* 175% */
 }
 
 .blog .blog-cta {
@@ -692,6 +711,10 @@ a {
     display: flex;
 }
 
+.footer .heading.lv3 {
+    color: white;
+}
+
 .footer .desc,
 .footer .item a,
 .footer .item span {
@@ -703,12 +726,6 @@ a {
 
 .footer .desc {
     margin-top: 18px;
-}
-
-.footer .column .sub-title {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
 }
 
 .footer .column:first-child {
