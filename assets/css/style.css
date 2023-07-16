@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -591,7 +592,6 @@ a {
 }
 
 /* =============Blogs============== */
-
 .blog {
     margin-top: 100px;
     padding: 96px 0 102px;
@@ -698,8 +698,8 @@ a {
     margin-top: 38px;
     justify-content: center;
 }
-
 /* =================Footer=========== */
+
 .footer {
     background-color: #2e2100;
     padding: 96px 0 28px;
@@ -727,17 +727,23 @@ a {
 }
 
 .footer .column:first-child {
+    /* width: 267px; */
+    width: 35%;
+    /* margin-right: 145px; */
+}
+
+.footer .column:first-child .desc{
     width: 267px;
-    margin-right: 145px;
 }
 
 .footer .column + .column {
-    margin-right: 130px;
+    /* margin-right: 130px; */
+    width: 21.6%;
 }
 
 .footer .column:last-child {
-    width: 231.6px;
-    margin-right: 0;
+    /* width: 231.6px; */
+    /* margin-right: 0; */
 }
 .footer .social-link {
     display: flex;
